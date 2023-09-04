@@ -6,8 +6,8 @@ parent_folder = 'vbox-data'
 
 csv_files = [f for f in os.listdir(parent_folder) if f.endswith('.csv')]
 
-min_rows_per_microtrip = 50
-max_rows_per_microtrip = 200
+min_rows_per_microtrip = 500
+max_rows_per_microtrip = 500
 
 for csv_file in csv_files:
     df = pd.read_csv(os.path.join(parent_folder, csv_file))
